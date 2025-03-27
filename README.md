@@ -5,5 +5,6 @@ Quick Notes
       - REACT + VITE 
    - BACKEND
       - EXPRESS.JS
+      - NODE.JS
    - DATABASE
       - MONGODB   
