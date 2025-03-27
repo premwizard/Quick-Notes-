@@ -1,0 +1,120 @@
+/* index.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  color: #272727;
+  transition:  0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+/* Dark mode background with gradient */
+body.dark-mode {
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  color: #f9f9f9;
+}
+
+.app {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* For dark mode card background */
+body.dark-mode .app {
+  background: rgba(30, 30, 30, 0.7);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.input-bar {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.input-bar input {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+}
+
+.input-bar button {
+  padding: 0.6rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+.search-bar {
+  width: 96%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.notes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.note {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+body.dark-mode .note {
+  background: #2e2e2e;
+}
+
+.note-actions {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background-color: #2e4c6d;
+  color: white;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.note-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.edit-section input {
+  width: 80%;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
